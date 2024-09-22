@@ -1,13 +1,15 @@
-import React from 'react';
-import AppRouter from './Router/AppRouter';
-import './index.css'; 
+import { Router } from "react-router-dom"
+import "./App.css"
+import Navbar from "./components/Navbar"
+import Routers from "./Routes"
 
-const App = () => {
+function App () {
   return (
-    <div className="app">
-      <AppRouter />
-    </div>
-  );
-};
+   <div className="flex">
+    <Navbar/>
+    <Routers/>
+   </div>
+  )
+}
 
-export default App;
+export default App
